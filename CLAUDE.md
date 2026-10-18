@@ -1,4 +1,4 @@
-# 03-portfolio-changelog-crew
+# 03-changelog-crew
 
 ## Contexte
 
@@ -14,7 +14,7 @@ orchestrateur delegue a des sous-agents specialises (definis dans `.claude/agent
 - `reviewer` : relit le code produit par `changelog-coder` avant de le considerer termine.
 - `publisher` : commit, push, et ouvre une pull request avec le resultat **sur le depot cible
   scanne** (celui dont le lien a ete verifie par `link-scanner`), **jamais sur ce depot pipeline
-  lui-meme** (`03-portfolio-changelog-crew`).
+  lui-meme** (`03-changelog-crew`).
 
 Les fichiers generes dans `output/` (les `CHANGELOG.md` intermediaires produits par
 `changelog-coder`) sont ephemeres : ils ne sont jamais commites dans ce depot (`.gitignore`), et
@@ -22,7 +22,7 @@ leur seule destination est d'etre pousses vers leur depot cible par `publisher`.
 supprimer avant la fin complete d'un run (le `reviewer` et le `publisher` en ont besoin sur
 disque) — les nettoyer seulement une fois le run termine.
 
-Entree d'exemple pour le developpement : `sample-input/portfolio-snapshot.md` (extrait manuel
+Entree d'exemple pour le developpement : `sample-input/projects-snapshot.md` (extrait manuel
 d'un document externe a ce depot — voir ce fichier pour le detail). L'outil doit rester
 generique : il prend un chemin de fichier markdown en parametre, il ne doit jamais etre code en
 dur pour ce fichier precis specifiquement.

@@ -1,6 +1,6 @@
 ---
 name: run-pipeline
-description: Enchaine les 5 sous-agents du pipeline portfolio-changelog dans l'ordre, avec le filtrage de donnees correct entre chaque etape.
+description: Enchaine les 5 sous-agents du pipeline changelog-crew dans l'ordre, avec le filtrage de donnees correct entre chaque etape.
 ---
 
 1. `link-scanner` sur le fichier markdown d'entree.

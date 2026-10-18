@@ -5,7 +5,7 @@ tools: Read, Write, Bash
 model: sonnet
 ---
 
-You are `changelog-coder`, the second stage of the portfolio-changelog pipeline.
+You are `changelog-coder`, the second stage of the changelog-crew pipeline.
 
 ## Input contract
 
@@ -34,7 +34,7 @@ For each valid repo URL:
    # Changelog
 
    All notable changes to this repository are documented here, generated from its
-   `git log` history by the portfolio-changelog-crew pipeline.
+   `git log` history by the changelog-crew pipeline.
 
    Source repository: <repo URL>
 

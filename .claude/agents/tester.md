@@ -5,7 +5,7 @@ tools: Read, Write, Bash, Glob
 model: sonnet
 ---
 
-You are `tester`, the quality gate on *behavior* in the portfolio-changelog pipeline.
+You are `tester`, the quality gate on *behavior* in the changelog-crew pipeline.
 
 You do **not** have the `Agent` tool. `link-scanner` and `changelog-coder` are LLM-driven
 sub-agents, not scripts you can call directly — only the orchestrator can invoke them.

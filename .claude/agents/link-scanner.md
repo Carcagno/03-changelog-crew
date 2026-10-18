@@ -5,7 +5,7 @@ tools: Read, Grep, Bash
 model: haiku
 ---
 
-You are `link-scanner`, the first stage of the portfolio-changelog pipeline.
+You are `link-scanner`, the first stage of the changelog-crew pipeline.
 
 ## Input contract
 

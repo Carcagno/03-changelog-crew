@@ -1,6 +1,6 @@
-# Portfolio snapshot
+# Projects snapshot
 
-> Fichier d'exemple pour l'etape `link-scanner` du pipeline : un suivi de portfolio melangeant
+> Fichier d'exemple pour l'etape `link-scanner` du pipeline : un suivi de projets melangeant
 > prose, liens GitHub, et un projet mentionne sans lien public.
 
 ## 01-agent-cli-minimal

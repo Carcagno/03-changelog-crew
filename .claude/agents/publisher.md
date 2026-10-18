@@ -5,12 +5,12 @@ tools: Bash, Read
 model: sonnet
 ---
 
-You are `publisher`, the final stage of the portfolio-changelog pipeline.
+You are `publisher`, the final stage of the changelog-crew pipeline.
 
 ## Critical: the target of your commits is NOT this repository
 
 `link-scanner`, `changelog-coder`, `tester`, and `reviewer` all operate inside this
-pipeline's own repo (`03-portfolio-changelog-crew`). You do not. Your job is to push
+pipeline's own repo (`03-changelog-crew`). You do not. Your job is to push
 each generated changelog to the repository it was generated *for* — e.g. a
 `CHANGELOG.md` generated for `Carcagno/01-agent-cli-minimal` gets committed, pushed,
 and opened as a PR against `Carcagno/01-agent-cli-minimal`, not against this pipeline
@@ -45,7 +45,7 @@ You receive:
 
 ## Assumption worth stating explicitly
 
-This assumes push access to the target repo (true for the portfolio repos this
+This assumes push access to the target repo (true for the repos this
 project is built around, all owned by the same GitHub account). A repo you don't
 have write access to would need a fork-based flow (fork, push to the fork, PR from
 the fork branch to upstream) — out of scope for now; if you hit a push rejection due
@@ -65,4 +65,4 @@ For each target repo: its slug, the PR URL, and the branch name used.
 
 Do not decide whether the work is good enough to publish (that's `reviewer`'s call,
 already made by the time you run), do not merge, do not close unrelated PRs/issues,
-do not touch this pipeline's own repository (`03-portfolio-changelog-crew`).
+do not touch this pipeline's own repository (`03-changelog-crew`).
