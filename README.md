@@ -1,13 +1,13 @@
-# portfolio-changelog-crew
+# changelog-crew
 
-A multi-agent pipeline, orchestrated with Claude Code, that turns a portfolio markdown
+A multi-agent pipeline, orchestrated with Claude Code, that turns a markdown
 file into pull requests: it finds the GitHub repositories mentioned in the file, verifies
 each link, generates a `CHANGELOG.md` from each repository's real commit history, and
 opens a pull request with it on the target repository.
 
 ## What it does
 
-Given the path to a markdown file (any file — a portfolio tracker, a project index,
+Given the path to a markdown file (any file — a project tracker, a reading list,
 anything that mentions GitHub repositories in prose), the pipeline runs five stages:
 
 1. **Extraction & link verification** — every `github.com` URL in the file is pulled
@@ -96,7 +96,7 @@ needs.
 **Running a full pipeline pass**: open this project in Claude Code and ask it to run the
 pipeline against a markdown file, for example:
 
-> Run the full pipeline on `sample-input/portfolio-snapshot.md`.
+> Run the full pipeline on the sample file in `sample-input/`.
 
 The orchestrator will sequence the five sub-agents as described above, asking for
 confirmation before any action with real external side effects (pushing a branch,
